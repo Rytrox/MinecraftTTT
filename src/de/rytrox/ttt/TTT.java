@@ -15,17 +15,12 @@ public class TTT extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
-
+		config = new UTFConfig(new File(getDataFolder(), "config.yml"));
 	}
 	
 	@Override
 	public void onDisable() {
 
-	}
-
-	@Override
-	public void reloadConfig() {
-		config = new UTFConfig(new File(getDataFolder(), "config.yml"));
 	}
 
 	@Override
