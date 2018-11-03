@@ -14,3 +14,7 @@
 - Bungeecord und Multiworld-Support (Multiworld = Bukkitserver mit mehreren Welten. Kein Multiverse nötig)
 - Kurze Einführung in TTT (Spielereinführung / Tutorial)
 - Gun or Bow (Einstellbar, ob Schusswaffen oder Bögen verwendet werden)
+
+# Aufgaben Timeout:
+
+# Aufgaben Sether:
