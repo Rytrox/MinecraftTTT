@@ -7,6 +7,7 @@ import java.util.logging.Level;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import de.rytrox.ttt.configs.ConfigCreator;
 import de.timeout.utils.UTFConfig;
 
 public class TTT extends JavaPlugin {
@@ -15,6 +16,7 @@ public class TTT extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
+		new ConfigCreator(this, "assets/ttt/").loadConfigurations();
 		config = new UTFConfig(new File(getDataFolder(), "config.yml"));
 	}
 	
@@ -26,6 +28,7 @@ public class TTT extends JavaPlugin {
 	@Override
 	public void saveConfig() {
 		try {
+			config.options().copyHeader(true);
 			config.save(new File(getDataFolder(), "config.yml"));
 		} catch (IOException e) {
 			Bukkit.getLogger().log(Level.SEVERE, "Cannot save config.yml", e);
