@@ -56,7 +56,7 @@
 ```
 Map-Setup
 Datenbank / Files
-  1. ConfigManager und CustomLanguage integriert. Test mit Comments in Config erfolgreich (f091698d34fedd6eac3a8b7e3867b11bc1b9cb26)
+  1. ConfigManager und CustomLanguage integriert. Test mit Comments in Config erfolgreich (Commit: 59b3f58)
 ```
 
 # Aufgaben Sether:
