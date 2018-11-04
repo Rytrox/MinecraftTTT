@@ -11,6 +11,11 @@ import de.rytrox.ttt.configs.ConfigCreator;
 import de.rytrox.ttt.configs.ConfigManager;
 import de.timeout.utils.UTFConfig;
 
+/**
+ * Main-Class
+ * @author Rytrox
+ *
+ */
 public class TTT extends JavaPlugin {
 	
 	public static TTT plugin;
@@ -18,6 +23,9 @@ public class TTT extends JavaPlugin {
 	private UTFConfig config;
 	private ConfigManager configManager;
 
+	/**
+	 * Will be called on enable
+	 */
 	@Override
 	public void onEnable() {
 		plugin = this;
@@ -26,11 +34,17 @@ public class TTT extends JavaPlugin {
 		this.configManager = new ConfigManager(config.getString("language"));
 	}
 	
+	/**
+	 * Will be called on Plugin-Disable
+	 */
 	@Override
 	public void onDisable() {
 		saveConfig();
 	}
 
+	/**
+	 * Save the default config.yml
+	 */
 	@Override
 	public void saveConfig() {
 		try {
@@ -41,11 +55,19 @@ public class TTT extends JavaPlugin {
 		}
 	}
 	
+	/**
+	 * get the config.yml
+	 * @return the config.yml
+	 */
 	@Override
 	public UTFConfig getConfig() {
 		return config;
 	}
 	
+	/**
+	 * Get the ConfigManager
+	 * @return the ConfigManager
+	 */
 	public ConfigManager getConfigManager() {
 		return configManager;
 	}
