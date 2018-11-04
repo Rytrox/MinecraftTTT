@@ -24,20 +24,20 @@ public class ConfigCreator {
 	private static final String CONFIG_LOADED = "§8[§aOut-Configuration§8] §a%f §f is §asucessful loaded";
 	private static final String CONFIG_GENERATE = "§8[§aOut-Configuration§8] §a%f §7could not be found: §aGenerate...";
 	
-	private TTT main;
+	private static final TTT main = TTT.plugin;
 	//Must be "assets/ttt/"
 	private String packagepath;
 	
-	public ConfigCreator(TTT main, String packagepath) {
-		this.main = main;
+	public ConfigCreator(String packagepath) {
 		this.packagepath = packagepath;
 	}
-	
+
 	/**
 	 * Creates Configurations if not exists
 	 */
 	public void loadConfigurations() {
 		loadResource("config.yml");
+		loadResource("language/de_DE.yml");
 	}
 
 	/**

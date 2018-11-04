@@ -1,0 +1,9 @@
+# Deutsche Sprachdatei für Trouble in Terrorist-Town
+
+# Das hier ist die Sprachdatei für das Plugin Trouble in Terrorist-Town
+# Hier können Ausgabenachrichten bearbeitet werden.
+# Farbcodes müssen mit '&' geschrieben werden.
+
+# Der Prefix des Systems
+prefix: '&8[&4TTT&8] '
+

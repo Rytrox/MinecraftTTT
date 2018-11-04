@@ -8,21 +8,27 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import de.rytrox.ttt.configs.ConfigCreator;
+import de.rytrox.ttt.configs.ConfigManager;
 import de.timeout.utils.UTFConfig;
 
 public class TTT extends JavaPlugin {
 	
+	public static TTT plugin;
+	
 	private UTFConfig config;
+	private ConfigManager configManager;
 
 	@Override
 	public void onEnable() {
-		new ConfigCreator(this, "assets/ttt/").loadConfigurations();
+		plugin = this;
+		new ConfigCreator("assets/ttt/").loadConfigurations();
 		config = new UTFConfig(new File(getDataFolder(), "config.yml"));
+		this.configManager = new ConfigManager(config.getString("language"));
 	}
 	
 	@Override
 	public void onDisable() {
-
+		saveConfig();
 	}
 
 	@Override
@@ -38,6 +44,10 @@ public class TTT extends JavaPlugin {
 	@Override
 	public UTFConfig getConfig() {
 		return config;
+	}
+	
+	public ConfigManager getConfigManager() {
+		return configManager;
 	}
 
 }

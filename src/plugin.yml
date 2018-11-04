@@ -1,0 +1,6 @@
+name: TroubleInTerroristTown
+version: 1.0.SNAPSHOT
+author: Rytrox
+description: A TTT-Plugin
+
+main: de.rytrox.ttt.TTT
