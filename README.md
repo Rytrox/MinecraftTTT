@@ -55,6 +55,7 @@
 # Aufgaben Timeout:
 ```
 Map-Setup
+  1. ConfigManager und CustomLanguage integriert. Test mit Comments in Config erfolgreich   (f091698d34fedd6eac3a8b7e3867b11bc1b9cb26)
 Datenbank / Files
 ```
 
