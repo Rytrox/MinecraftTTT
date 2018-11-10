@@ -1,0 +1,40 @@
+# Map-Setup Configuration
+# Version: 1.0
+# Author: Rytrox
+
+# The Name of the worlds
+worldname: 'world'
+arenaname: 'arena'
+
+# The Spawnlocations of the Players
+spawns:
+  '0':
+    x: 0.0
+    y: 72.0
+    z: 0.0
+    
+# TesterLocation (Button of Tester)
+tester:
+  '0':
+    button:
+      x: 0.0
+      y: 72.0
+      z: 0.0
+    minX: -10.0
+    maxX: 10.0
+    minZ: -10.0
+    maxZ: 10.0
+    
+# TrapsLocation (Position of Button)
+traps:
+  '0':
+    x: 0.0
+    y: 72.0
+    z: 0.0
+    
+# The Worldborder
+border:
+  minX: -100.0
+  minZ: -100.0
+  maxX: 100.0
+  maxZ: 100.0
